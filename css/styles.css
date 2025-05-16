@@ -1,0 +1,138 @@
+/*-------------------- Variables -------------------*/
+/*--------------------------------------------------*/
+
+* {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --yellow: #ffff99;
+  --red: #faafa8;
+  --brown: #e9e3d4;
+  --gray: #efeff1;
+  --white: white;
+  --blue: #d3e4ee;
+  --black: black;
+
+  --boxshadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+
+
+  --size: 16px;
+  --border: 0.5px
+}
+
+::selection {
+  color: var(--black);
+  background-color: var(--yellow);
+}
+
+@font-face {
+  font-family: Header;
+  src: url(/fonts/PhiliItaRus.woff);
+}
+
+@font-face {
+  font-family: simsun;
+  src: url(/fonts/NSimSun-02.woff2);
+}
+
+/*-------------------- Général -------------------*/
+/*------------------------------------------------*/
+
+html {
+  display: block;
+  font-family: 'simsun', Times, serif;
+  font-size: var(--size);
+  color: var(--black);
+  background-color: var(--gray);
+  scroll-behavior: smooth;
+  cursor: crosshair;
+  text-rendering: optimizeSpeed;
+
+
+  -moz-osx-font-smoothing: none;
+  -webkit-font-smoothing: none;
+}
+
+.content {
+  margin-left: 0;
+  margin-right: 0;
+
+  padding: 0 var(--size) var(--size) var(--size);
+}
+
+@media (min-width: 900px) {
+  .content {
+    margin-left: 25%;
+    margin-right: 25%;
+
+    padding: 0;
+  }
+}
+
+
+/*-------------------- Textes -------------------*/
+/*-----------------------------------------------*/
+
+
+h1{
+  font-family: 'Header', Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h2{
+    font-family: 'Header', Arial, Helvetica, sans-serif;
+}
+
+ol {
+  margin-top: 20px;
+    margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+
+h1,
+h2{
+    margin-top: 80px;
+}
+
+p,
+blockquote,
+figure,
+figcaption {
+  margin-top: 20px;
+}
+
+blockquote {
+  padding: 10px;
+  background-color: var(--blue);
+  border: 1px dotted var(--black);
+  box-shadow: var(--boxshadow);
+}
+
+
+
+/*-------------------- Images -------------------*/
+/*-----------------------------------------------*/
+
+figure {}
+
+figcaption {
+  text-align: center;
+}
+
+
+img, video{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: var(--boxshadow);
+  image-rendering: pixelated;
+
+  object-fit: contain;
+  width: 80%;
+}
