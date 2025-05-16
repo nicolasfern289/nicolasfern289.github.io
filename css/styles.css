@@ -49,7 +49,7 @@ html {
   background-color: var(--gray);
   scroll-behavior: smooth;
   cursor: crosshair;
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
 
 
   -moz-osx-font-smoothing: none;
