@@ -29,13 +29,13 @@
 }
 
 @font-face {
-  font-family: Header;
-  src: url(/fonts/PhiliItaRus.woff);
+  font-family: titre;
+  src: url(/fonts/titre.woff);
 }
 
 @font-face {
-  font-family: simsun;
-  src: url(/fonts/NSimSun-02.woff2);
+  font-family: labeur;
+  src: url(/fonts/labeur.woff);
 }
 
 /*-------------------- Général -------------------*/
@@ -43,7 +43,7 @@
 
 html {
   display: block;
-  font-family: 'simsun', Times, serif;
+  font-family: 'labeur', Times, serif;
   font-size: var(--size);
   color: var(--black);
   background-color: var(--gray);
@@ -78,14 +78,14 @@ html {
 
 
 h1{
-  font-family: 'Header', Arial, Helvetica, sans-serif;
+  font-family: 'titre', Arial, Helvetica, sans-serif;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 h2{
-    font-family: 'Header', Arial, Helvetica, sans-serif;
+    font-family: 'titre', Arial, Helvetica, sans-serif;
 }
 
 ol {
@@ -96,22 +96,28 @@ ol {
 
 
 h1,
-h2{
+h2,
+blockquote,
+figure{
     margin-top: 80px;
 }
 
 p,
-blockquote,
-figure,
 figcaption {
   margin-top: 20px;
 }
 
 blockquote {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
   padding: 10px;
   background-color: var(--blue);
   border: 1px dotted var(--black);
   box-shadow: var(--boxshadow);
+  transform: rotate(-0.5deg);
 }
 
 
