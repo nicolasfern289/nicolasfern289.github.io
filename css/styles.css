@@ -88,7 +88,7 @@ h2{
     font-family: 'titre', Arial, Helvetica, sans-serif;
 }
 
-ol {
+ol, ul {
   margin-top: 20px;
     margin-bottom: 20px;
   padding-left: 40px;
@@ -103,7 +103,8 @@ figure{
 }
 
 p,
-figcaption {
+figcaption,
+li {
   margin-top: 20px;
 }
 
